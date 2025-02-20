@@ -49,7 +49,7 @@ public class LevelIndicator extends JPanel {
             JFrame frame = new JFrame("Индикатор уровня");
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             LevelIndicator indicator = new LevelIndicator(0, 100, 30, 70, 0, 100);
-            new Timer(500, e -> {
+            new Timer(60, e -> {
                 int newValue = (int) (Math.random() * 101);
                 indicator.setValue(newValue);
             }).start();
